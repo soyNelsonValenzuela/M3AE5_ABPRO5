@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <div class="logo">BoxModel</div>
+        <div class="logo"><a href="#">BoxModel</a></div>
         <button class="menu-toggle" id="menu-toggle">&#9776;</button>
         <nav class="nav" id="nav">
             <ul>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main>
-        <article class="article">
+        <div class="article">
             <h2>Modelo de Caja</h2>
             <div class="article_body">
                 <img class="article_img" src="https://cdn.pixabay.com/photo/2019/10/09/06/06/gift-4536515_960_720.png"
@@ -33,15 +33,75 @@
                     bordes, rellenos y contenido.</p>
             </div>
             <div class="article_btn_container">
-                <button type="button" class="article_btn rojo"> Rojo</button>
-                <button type="button" class="article_btn azul"> Azul</button>
-                <button type="button" class="article_btn verde"> Verde</button>
+                <button type="button" class="btn rojo"> Rojo</button>
+                <button type="button" class="btn azul"> Azul</button>
+                <button type="button" class="btn verde"> Verde</button>
             </div>
-        </article>
+
+            <section class="productos">
+                <h3>Productos</h3>
+                <div>
+                    <div class="producto" id="p1"><img src="https://picsum.photos/id/101/200/150" alt="">
+                        <p>Producto 1</p>
+                    </div>
+                    <div class="producto" id="p2"><img src="https://picsum.photos/id/1/200/150" alt="">
+                        <p>Producto 2</p>
+                    </div>
+                    <div class="producto" id="p3"><img src="https://picsum.photos/id/103/200/150" alt="">
+                        <p>Producto 3</p>
+                    </div>
+                    <div class="producto" id="p4"><img src="https://picsum.photos/id/104/200/150" alt="">
+                        <p>Producto 4</p>
+                    </div>
+                    <div class="producto" id="p5"><img src="https://picsum.photos/id/113/200/150" alt="">
+                        <p>Producto 5</p>
+                    </div>
+                    <div class="producto" id="p6"><img src="https://picsum.photos/id/106/200/150" alt="">
+                        <p>Producto 6</p>
+                    </div>
+                    <div class="producto" id="p7"><img src="https://picsum.photos/id/107/200/150" alt="">
+                        <p>Producto 7</p>
+                    </div>
+                    <div class="producto" id="p8"><img src="https://picsum.photos/id/108/200/150" alt="">
+                        <p>Producto 8</p>
+                    </div>
+                    <div class="producto" id="p9"><img src="https://picsum.photos/id/109/200/150" alt="">
+                        <p>Producto 9</p>
+                    </div>
+                    <div class="producto" id="p10"><img src="https://picsum.photos/id/110/200/150" alt="">
+                        <p>Producto 10</p>
+                    </div>
+                    <div class="producto" id="p11"><img src="https://picsum.photos/id/111/200/150" alt="">
+                        <p>Producto 11</p>
+                    </div>
+                    <div class="producto" id="p12"><img src="https://picsum.photos/id/112/200/150" alt="">
+                        <p>Producto 12</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="formulario">
+            <h3>Formulario de Contacto</h3>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                <button type="submit" class="btn" >Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 ABP4. Todos los derechos reservados.</p>
         <p>Desarrollado por [Tu Nombre]</p>
+        <div class="redes">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24"></a>
+        </div>
     </footer>
 </body>
 
