@@ -1,4 +1,4 @@
-# 🧱 M3AE4 - ABP4: Modelo de Caja y Layout con CSS
+# 🧱 M3AE4 - ABPRO4: Modelo de Caja y Layout con CSS
 
 Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Talento Digital. El objetivo principal es implementar una interfaz web aplicando el **modelo de cajas (box model)** de CSS y construir un **layout responsivo** acorde a un prototipo entregado.
 
