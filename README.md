@@ -27,6 +27,15 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 - Ocupa el **100% del ancho de la pantalla**.
 - Padding interno de `10px`.
 - Color de fondo sólido.
+- El menú debe estar **fijo en el borde superior** .
+
+### 🖼️ Sección de Productos
+
+- **12 productos**.
+- Cada producto tiene una **imagen** y una **descripción**.
+- Los productos  estan **distribuidos horizontalmente**, observándose:
+  - **4 productos hacia abajo**.
+  - **1 producto al lado del otro**.
 
 ### 📦 Footer
 
@@ -34,6 +43,14 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 - Padding de `20px`.
 - Color de fondo contrastante con el header.
 - Margin superior de `50px`.
+- **Íconos de redes sociales** alineados a la **derecha** del footer.
+
+### 📝 Formulario de Contacto
+
+- Debe contener los siguientes campos:
+  - Nombre
+  - Apellido
+  - Comentario
 
 ### 🔘 Botones
 
@@ -46,6 +63,7 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 ### 📱 Responsividad
 
 - El diseño se adapta a diferentes tamaños de pantalla usando **media queries**.
+
 ---
 
 ## 🚀 Cómo ejecutar el proyecto
