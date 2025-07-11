@@ -76,7 +76,7 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 
 ### 📱 Responsividad
 
-- El diseño se adapta a diferentes tamaños de pantalla usando **media queries**.
+- El diseño se adapta a diferentes tamaños de pantalla usando **media queries** y **col** de bootstrap.
 
 ---
 
