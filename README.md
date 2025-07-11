@@ -1,10 +1,10 @@
 # 🧱 M3AE4 - ABPRO4: Modelo de Caja y Layout con CSS
 
-Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Talento Digital. El objetivo principal es implementar una interfaz web aplicando el **modelo de cajas (box model)** de CSS y construir un **layout responsivo** acorde a un prototipo entregado.
+Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Talento Digital. El objetivo principal es implementar una interfaz web aplicando el **modelo de cajas (box model)** de CSS y construir un **layout responsivo** acorde a un prototipo entregado agregando Bootstrap.
 
 ## 🎯 Aprendizaje Esperado
 
-> Implementar una interfaz web utilizando el modelo de cajas acorde a las especificaciones de un prototipo.
+> Implementar una interfaz web utilizando el modelo de cajas e implementando Bootstrap.
 
 ---
 
@@ -21,6 +21,20 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 
 - **Modelo de Caja en todos los elementos**:
   - Cada elemento debe contemplar `margin`, `border`, `padding` y `width` explícitamente definidos.
+
+- **Implementar Bootstrap al proyecto**:
+  - El sitio debe incorporar una barra de navegación utilizando bootstrap., anteriormente se creó un menú, por tanto, ahora deberán incorporarse las clases de bootstrap.
+
+  - Para entornos mobile y tablets, debe implementar el llamado ‘menú hamburguesa’.
+
+  - Añadir un carousel de imágenes al proyecto.
+
+  - Al formulario agregar un modal o alerts al dar click al botón enviar donde diga "guardado exitosamente".
+
+  - Todo lo ya realizado debe agregarle las clases de bootstrap,
+
+  - La sección de productos deberá implementarse mediante cards que contengan imagen, descripción, un título y un botón de acción.
+
 
 ### 🖼️ Header
 

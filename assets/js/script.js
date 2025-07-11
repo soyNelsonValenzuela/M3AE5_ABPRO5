@@ -1,7 +1,7 @@
-// JS mínimo para abrir/cerrar el menú en móvil
-const toggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav');
-
-toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+const form = document.getElementById('formularioContacto');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('modalExito'));
+    modal.show();
+    form.reset();
 });
