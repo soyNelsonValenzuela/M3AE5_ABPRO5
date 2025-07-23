@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Sombreamiento y radios para .article y .card
+.article, .card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: $border-radius-card;
+}
+.article_img, .card-img-top {
+  object-fit: cover;
+  border-radius: $border-radius-card;
+}
+.card-img-top {
+  object-fit: contain;
+  height: 150px;
+}

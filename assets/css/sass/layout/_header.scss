@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+header.fixed-top {
+  .navbar {
+    background-color: $color-primary !important;
+    .navbar-brand { font-weight: bold; }
+  }
+}

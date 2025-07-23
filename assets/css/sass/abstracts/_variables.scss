@@ -1,0 +1,35 @@
+// Fuentes y tipografía
+$font-family-base: 'Poppins', sans-serif;
+$font-size-base: 16px;
+
+// Colores
+$color-primary: #28a745;    // success
+$color-warning: #ffc107;
+$color-danger:  #dc3545;
+$color-info:    #17a2b8;
+$color-white:   #ffffff;
+$color-black:   #000000;
+$body-bg:       #fefae0;
+
+// Colores extras
+$color-rojo:  red;
+$color-azul:  blue;
+$color-verde: green;
+
+// Bordes y radios
+$border-radius-btn:  0.25rem;
+$border-radius-card: 10px;
+
+// Espaciados botones
+$btn-padding-vertical:   5px;
+$btn-padding-horizontal: 30px;
+$btn-margin-vertical:    20px;
+$btn-margin-horizontal:  10px;
+
+// Breakpoints personalizados (Bootstrap usa también este mapa)
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);

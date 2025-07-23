@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $body-bg;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+main {
+  flex: 1;
+}
+#hero, #acerca-de, #productos, #contacto, #inicio {
+  scroll-margin-top: 80px;
+}

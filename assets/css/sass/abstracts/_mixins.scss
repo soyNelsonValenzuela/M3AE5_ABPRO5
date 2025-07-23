@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+// Márgenes
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+// Rellenos
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
+}
+
+// Transiciones
+@mixin transition($prop: all, $dur: .3s, $timing: ease-in-out) {
+  transition: $prop $dur $timing;
+}
+
+// Media queries
+@mixin respond($break) {
+  @if map-has-key($breakpoints, $break) {
+    @media (min-width: map-get($breakpoints, $break)) {
+      @content;
+    }
+  }
+}

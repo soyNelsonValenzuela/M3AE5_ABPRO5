@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#hero {
+  .article { &-title { text-align: center; } }
+  .article_body {
+    display: flex;
+    flex-direction: column;
+    @include respond(md) { flex-direction: row; }
+  }
+  .article_text {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+}

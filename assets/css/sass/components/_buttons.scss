@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.btn {
+  padding:$btn-padding-vertical $btn-padding-horizontal;
+  border-radius: $border-radius-btn;
+  @include transition(all, .3s);
+
+
+  &.rojo {
+    &:hover, &:active {
+      background-color: $color-rojo !important;
+      color: $color-white !important;
+    }
+  }
+  &.azul {
+    &:hover, &:active {
+      background-color: $color-azul !important;
+      color: $color-white !important;
+    }
+  }
+  &.verde {
+    &:hover, &:active {
+      background-color: $color-verde !important;
+      color: $color-white !important;
+    }
+  }
+}

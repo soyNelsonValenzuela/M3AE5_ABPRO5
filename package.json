@@ -1,0 +1,32 @@
+{
+  "name": "m3ae5_abpro5",
+  "version": "1.0.0",
+  "description": "Ejercicio practico Utilizando Bootstrap 4 como Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyNelsonValenzuela/M3AE5_ABPRO5.git"
+  },
+  "keywords": [
+    "sass",
+    "bootstrap",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Nelson Valenzuela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyNelsonValenzuela/M3AE5_ABPRO5/issues"
+  },
+  "homepage": "https://github.com/soyNelsonValenzuela/M3AE5_ABPRO5#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

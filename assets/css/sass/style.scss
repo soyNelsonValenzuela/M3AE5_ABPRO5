@@ -1,0 +1,18 @@
+// 1) Bootstrap
+@use "vendors/bootstrap-custom";
+
+// 2) Tus abstracts, base, layout, components, pages…
+@use "abstracts/variables" as *;
+@use "abstracts/mixins"   as *;
+@use "base/reset";
+@use "base/typography";
+@use "layout/header";
+@use "layout/footer";
+@use "components/buttons";
+@use "components/cards";
+@use "components/carousel";
+@use "components/form";
+@use "pages/hero";
+@use "pages/productos";
+@use "pages/contacto";
+@use "themes/theme-default";

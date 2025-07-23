@@ -1,0 +1,3 @@
+// Desde assets/css/sass/vendors sube 4 niveles hasta la raíz,
+// luego entra a node_modules/bootstrap/scss/bootstrap.scss
+@use "../../../../node_modules/bootstrap/scss/bootstrap";
