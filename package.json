@@ -4,7 +4,8 @@
   "description": "Ejercicio practico Utilizando Bootstrap 4 como Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:sass": "sass assets/css/sass/style.scss assets/css/style.css",
+    "watch:sass": "sass --watch assets/css/sass:assets/css"
   },
   "repository": {
     "type": "git",
