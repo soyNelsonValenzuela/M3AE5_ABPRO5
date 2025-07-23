@@ -1,10 +1,14 @@
-# 🧱 M3AE5 - ABP5: Utilizando Bootstrap como framework CSS
+# 🧱 M3AE5 – ABPRO5: Bootstrap y SASS 
 
-Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Talento Digital. El objetivo principal es implementar una interfaz web aplicando el **modelo de cajas (box model)** de CSS y construir un **layout responsivo** acorde a un prototipo entregado agregando Bootstrap.
+Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Talento Digital. El objetivo principal es:
+
+- Aplicar el **modelo de cajas (Box Model)** de CSS.
+- Construir un **layout responsivo** con **Bootstrap 5**.
+- Modularizar y organizar los estilos con **SASS** siguiendo el **patrón 7-1**.
 
 ## 🎯 Aprendizaje Esperado
 
-> Implementar una interfaz web utilizando el modelo de cajas e implementando Bootstrap.
+> Implementar una arquitectura de estilos clara y escalable combinando Box Model, Bootstrap y SASS.
 
 ---
 
@@ -12,82 +16,121 @@ Este proyecto forma parte del módulo de desarrollo frontend en el bootcamp Tale
 
 ### 🧩 Estructura General
 
-- **Contenedor principal**:
-  - Ocupa el 80% del ancho de la ventana.
-  - Centrado horizontalmente (`margin auto`).
-  - Borde de `1px` color gris claro.
-  - Padding interno de `20px`.
-  - Margin externo para evitar contacto con los bordes de la ventana.
-
-- **Modelo de Caja en todos los elementos**:
-  - Cada elemento debe contemplar `margin`, `border`, `padding` y `width` explícitamente definidos.
-
-- **Implementar Bootstrap al proyecto**:
-  - El sitio debe incorporar una barra de navegación utilizando bootstrap., anteriormente se creó un menú, por tanto, ahora deberán incorporarse las clases de bootstrap.
-
-  - Para entornos mobile y tablets, debe implementar el llamado ‘menú hamburguesa’.
-
-  - Añadir un carousel de imágenes al proyecto.
-
-  - Al formulario agregar un modal o alerts al dar click al botón enviar donde diga "guardado exitosamente".
-
-  - Todo lo ya realizado debe agregarle las clases de bootstrap,
-
-  - La sección de productos deberá implementarse mediante cards que contengan imagen, descripción, un título y un botón de acción.
-
+- **Contenedor Principal**:
+  - Ancho: 80% de la ventana.
+  - Centrado horizontal (`margin: auto`).
+  - Borde: 1px color gris claro.
+  - Padding interno: 20px.
+  - Margin externo para separación de bordes.
+- **Modelo de Caja**: cada elemento debe definir explícitamente `margin`, `border`, `padding` y `width`.
+- **Bootstrap**:
+  - Navbar fija con menú hamburguesa en mobile/tablet.
+  - Carousel de imágenes.
+  - Sección de productos con cards (imagen, título, descripción, botón).
+  - Modal o alerta al enviar el formulario con el mensaje “Guardado exitosamente”.
+- **SASS (Patrón 7-1)**:
+  - Variables globales en `abstracts/_variables.scss`.
+  - Mixins reutilizables en `abstracts/_mixins.scss`.
+  - Overrides de Bootstrap en `vendors/_bootstrap-custom.scss`.
+  - Módulos para base, layout, components y pages.
 
 ### 🖼️ Header
 
-- Ocupa el **100% del ancho de la pantalla**.
-- Padding interno de `10px`.
-- Color de fondo sólido.
-- El menú debe estar **fijo en el borde superior** .
+- Ancho: 100%.
+- Padding: 10px.
+- Fondo sólido.
+- Navbar fija en el top.
 
 ### 🖼️ Sección de Productos
 
-- **12 productos**.
-- Cada producto tiene una **imagen** y una **descripción**.
-- Los productos  estan **distribuidos horizontalmente**, observándose:
-  - **4 productos hacia abajo**.
-  - **1 producto al lado del otro**.
+- 12 productos con imagen, título, descripción y botón.
+- Grid responsivo:
+  - 4 columnas en desktop.
+  - Adaptable en tablets y móviles.
 
 ### 📦 Footer
 
-- Altura fija de `100px`.
-- Padding de `20px`.
-- Color de fondo contrastante con el header.
-- Margin superior de `50px`.
-- **Íconos de redes sociales** alineados a la **derecha** del footer.
+- Altura: 100px.
+- Padding: 20px.
+- Fondo contrastante.
+- Margin-top: 50px.
+- Íconos de redes sociales alineados a la derecha.
 
 ### 📝 Formulario de Contacto
 
-- Debe contener los siguientes campos:
-  - Nombre
-  - Apellido
-  - Comentario
+- Campos: Nombre, Apellido, Mensaje.
+- Estilos con Bootstrap y SASS.
 
 ### 🔘 Botones
 
 - Padding interno.
-- Borde definido.
-- Espaciado entre botones mediante `margin`.
-- Bordes redondeados (`border-radius`).
-- Efecto visual en `hover`.
+- Espaciado con `margin`.
+- Border-radius.
+- Efecto `hover`.
 
 ### 📱 Responsividad
 
-- El diseño se adapta a diferentes tamaños de pantalla usando **media queries** y **col** de bootstrap.
+- Uso de clases de Bootstrap y mixins de SASS para media queries.
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+## 🌐 Modularización con SASS (Patrón 7-1)
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/soyNelsonValenzuela/M3AE4_ABP4.git
-   ```
+```
+assets/scss/
+├── abstracts/      // Variables, mixins, funciones
+├── base/           // Reset, tipografía
+├── components/     // Botones, cards, form, carousel
+├── layout/         // Header, footer
+├── pages/          // Estilos por sección
+├── themes/         // Temas opcionales
+├── vendors/        // Overrides de Bootstrap
+└── style.scss      // Punto de entrada
+```
 
-2. Abre el archivo `index.html` en tu navegador.
+- Variables globales en `abstracts/_variables.scss`.
+- Mixins en `abstracts/_mixins.scss`.
+- Bootstrap override en `vendors/_bootstrap-custom.scss`.
+
+---
+
+## 💻 Tecnologías
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- SASS (Dart Sass)
+- JavaScript (Bootstrap Bundle)
+- Node.js & npm (solo para compilación de SASS)
+
+---
+
+## 🚀 Instalación y Uso
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/soyNelsonValenzuela/M3AE5_ABPRO5.git
+cd M3AE5_ABPRO5
+
+# Instalar dependencias
+npm install
+
+# Compilar SASS una vez
+npm run build:sass
+
+# Modo watch (recompila al guardar)
+npm run watch:sass
+
+# Abrir index.html en tu navegador
+```
+
+**Scripts en package.json**:
+```json
+"scripts": {
+  "build:sass": "sass --load-path=node_modules assets/css/sass/style.scss assets/css/style.css",
+  "watch:sass": "sass --load-path=node_modules --watch assets/css/sass:assets/css"
+}
+```
 
 ---
 
